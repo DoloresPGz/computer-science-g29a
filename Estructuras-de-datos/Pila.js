@@ -31,19 +31,19 @@ class Pila {
   }
 }
 // Instanciar la clase Pila
-let pilaPlatos = new Pila()
+// let pilaPlatos = new Pila()
 // Agregar platos a la pila
-pilaPlatos.print()
-pilaPlatos.push('Plato1')
-pilaPlatos.push('Plato2')
-pilaPlatos.push('Plato3')
-pilaPlatos.push('Plato4')
-// Mostrar el contenido de la pila
-pilaPlatos.print()
-// Sacar un plato de la pila
-let elementoEliminado = pilaPlatos.pop()
-pilaPlatos.print()
-console.log(`El elemento eliminado es: ${elementoEliminado} `)
+// pilaPlatos.print()
+// pilaPlatos.push('Plato1')
+// pilaPlatos.push('Plato2')
+// pilaPlatos.push('Plato3')
+// pilaPlatos.push('Plato4')
+// // Mostrar el contenido de la pila
+// pilaPlatos.print()
+// // Sacar un plato de la pila
+// let elementoEliminado = pilaPlatos.pop()
+// pilaPlatos.print()
+// console.log(`El elemento eliminado es: ${elementoEliminado} `)
 
 class PilaObjeto {
   constructor(){
@@ -54,7 +54,7 @@ class PilaObjeto {
     this.data[this.contador] = element
     this.contador++
   }
-  pop(){
+  pop(){ 
     if(this.contador === 0){
       return null
     }
@@ -63,6 +63,7 @@ class PilaObjeto {
     delete this.data[this.contador]
     return elemento
   }
+
   peek(){
     return this.data[this.contador - 1]
   }
@@ -76,4 +77,16 @@ class PilaObjeto {
     console.log(this.data)
   }
 }
+
+// let pilaPlatos = new PilaObjeto()
+// pilaPlatos.print()
+// pilaPlatos.push('Plato1')
+// pilaPlatos.push('Plato2')
+// pilaPlatos.push('Plato3')
+// pilaPlatos.push('Plato4')
+// pilaPlatos.print()
+// let elementoEliminado = pilaPlatos.pop()
+// pilaPlatos.print()
+// console.log(`El elemento eliminado es: ${elementoEliminado} `)
+
 
