@@ -56,6 +56,19 @@ class LinkedList{
     }
 
     //Recorrido de la lista
+    print(){
+        let listaEnlazada = ""
+        let current = this.head
+        while(true){
+            if(current == null)
+                break
+
+            listaEnlazada += `${current.data} -> `
+            current = current.next
+        }
+
+        return listaEnlazada += "null"
+    }
 
     //Búsqueda de un elemento
 }
@@ -69,6 +82,8 @@ ll.insert(4)
 
 console.log(ll)
 
-ll.delete(4)
-ll.delete(3)
+//ll.delete(4)
+ll.delete(2)
 console.log(ll)
+
+console.log(ll.print())
