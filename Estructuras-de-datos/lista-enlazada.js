@@ -57,10 +57,10 @@ class LinkedList{
 
     //Recorrido de la lista
     print(){
-        let listaEnlazada = ""
+        let listaEnlazada = "" //Cadena donde voy a concatenar los datos de mi lista enlazada
         let current = this.head
         while(true){
-            if(current == null)
+            if(!current) // es equivalente a poner (current == null)
                 break
 
             listaEnlazada += `${current.data} -> `
